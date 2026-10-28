@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <script type="text/javascript">
+        function myFunc(fname) {
+            if (fname === "itay") {
+                document.write("<h1>hello " + fname + "</h1>");
+            }
+            else {
+                document.write("<h1>hello stranger</h1>");
+            }
+        }
+
+        function bgColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        alert("start of script");
+        let name = prompt("enter your name");
+
+        bgColor("red");
+
+        myFunc(name);
+        alert("end of script");
+    </script>
+</head>
+<body>
+</body>
+</html>
