@@ -1,0 +1,38 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exercise 6</title>
+</head>
+
+<body dir="rtl">
+
+    <script>
+    var firstName = prompt("הכנס שם פרטי:");
+    var lastName = prompt("הכנס שם משפחה:");
+    var age = prompt("הכנס גיל:");
+    var address = prompt("הכנס כתובת:");
+
+document.write("<table border='1' style='margin:auto; margin-top:150px; border-collapse:collapse; width:740px;'>");
+    
+    document.write("<tr>");
+    document.write("<th>שם פרטי</th>");
+    document.write("<th>שם משפחה</th>");
+    document.write("<th>גיל</th>");
+    document.write("<th>כתובת</th>");
+    document.write("</tr>");
+
+    
+    document.write("<tr>");
+    document.write("<td style='background-color:blue;'>" + firstName + "</td>");
+    document.write("<td style='background-color:yellow;'>" + lastName + "</td>");
+    document.write("<td style='background-color:green;'>" + age + "</td>");
+    document.write("<td style='background-color:red;'>" + address + "</td>");
+    document.write("</tr>");
+
+document.write("</table>");
+    </script>
+
+</body>
+</html>
