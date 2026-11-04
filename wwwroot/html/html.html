@@ -31,6 +31,17 @@
             document.getElementById("demo").innerHTML = "Paragraph changed!";
         }
     </script>
+    <script type="text/javascript">
+        var maxX = window.innerWidth;
+        var maxY = window.innerHeight;
+        function Escape() {
+            var bike = document.getElementById("bike");
+            var x = Math.floor(Math.random() * (maxX + 1));
+            var y = Math.floor(Math.random() * (maxY + 1));
+            bike.style.left = x + "px";
+            bike.style.top = y + "px";
+        }
+    </script>
 </head>
 <body>
     <h1>Button Web Page</h1>
@@ -41,6 +52,12 @@
             onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>
         ClickMe
     </button>
+    <h1 style="text-align:center">catch the bike</h1>
+    <div id="bike" style="left:500px; position:absolute;">
+        <img src="../images/iamge2.jpg" alt="where is the bike"
+        style="width:150px;" onmouseover="Escape()" />
+
+    </div>
 
 </body>
 </html>
